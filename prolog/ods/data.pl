@@ -52,6 +52,7 @@
 	  ]).
 :- use_module(library(error)).
 :- use_module(datasource).
+:- use_module(sheet).
 
 :- meta_predicate
 	assert_table(:),

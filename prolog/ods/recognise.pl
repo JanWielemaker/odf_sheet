@@ -49,7 +49,7 @@
 	    sheet_bb/2			% :Sheet, -DataSource
 %	    ds_join/2			% +DataSources, -Joined
 	  ]).
-:- use_module(table).
+:- use_module(sheet).
 :- use_module(datasource).
 :- use_module(data).
 :- use_module(library(apply)).
@@ -201,7 +201,7 @@ cell_class(percentage).
 cell_class(string).
 
 
-%%	cell_class(?Sheet, ?X,?Y, ?Class) is	nondet.
+%%	cell_class(:Sheet, ?X,?Y, ?Class) is	nondet.
 %
 %	Classification of cells.  Defined classes are:
 %

@@ -56,7 +56,7 @@
 	    ds_unbounded_column_slice/3,% +DS1, +Offset, ?Slice
 	    ds_grow/3			% +DS0, +Offset, -DS
 	  ]).
-:- use_module(table).
+:- use_module(sheet).
 :- use_module(library(apply)).
 
 /** <module> Represent and reason about sheet areas

@@ -308,7 +308,7 @@ blocks(Sheet, Type, Blocks) :-
 block_in_sheet(M:Sheet, Type, block(Id,Type,DS)) :-
 	ds_sheet(DS, Sheet),
 	cell_class(Type),
-	unassigned_anchor(DS, Type),
+	unassigned_anchor(M:DS, Type),
 	once(block(M:DS, Type)),
 	ds_id(DS, Id, block).
 
