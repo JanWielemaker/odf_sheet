@@ -109,7 +109,10 @@ web_portray(List, M) -->
 	html(h2('List of ~D objects'-[Len])),
 	web_portray_list(List, M).
 web_portray(Block, M) -->
-	{ atom(Block), M:block(Block, _Type, DS) },
+	{ atom(Block),
+	  current_predicate(M:block/3),
+	  M:block(Block, _Type, DS)
+	},
 	html(h2('Block ~p'-[Block])),
 	web_portray(DS, M).
 web_portray(_, _) -->
