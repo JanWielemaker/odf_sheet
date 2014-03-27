@@ -76,7 +76,7 @@ home(_Request) :-
 show(Data) :-
 	show(Data, []).
 
-show(M:Data, [Options]) :-
+show(M:Data, Options) :-
 	wc_html(log, \webshow(Data, M), Options).
 
 clear :-
