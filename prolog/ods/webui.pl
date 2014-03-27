@@ -43,7 +43,7 @@
 :- use_module(library(http/html_head)).
 :- use_module(library(http/html_write)).
 :- use_module(data).
-:- use_module(table).
+:- use_module(sheet).
 :- use_module(recognise).
 
 :- meta_predicate
