@@ -1605,7 +1605,7 @@ col_chars(Col, List, T) :-
 ods_unload :-
 	context_module(M),
 	clean_fixup,
-	retractall(ods_table:ods_spreadsheet(_, M)),
+	retractall(ods_sheet:ods_spreadsheet(_, M)),
 	(   predicate_property(M:sheet(_,_), dynamic)
 	->  forall(data_predicate(Name/Arity),
 		   ( functor(Head, Name, Arity),
