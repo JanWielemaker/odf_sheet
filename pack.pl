@@ -1,6 +1,6 @@
 name('odf_sheet').
 title('Load and analyze ODF spreadsheets (.ods)').
-version('0.2.3').
+version('0.2.4').
 keywords([odf, ods, spreadsheet, table]).
 author('Jan Wielemaker', 'J.Wielemaker@vu.nl').
 requires(webconsole).
