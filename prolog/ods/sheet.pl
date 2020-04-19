@@ -424,9 +424,13 @@ cell_annotation(DOM, Term) :-
 convert_annotation(DOM, annotation(Date, Author, Text)) :-
 	xpath(DOM, 'dc:date'(text), DateText),
 	parse_time(DateText, Date),
+	!,
 	findall(T, xpath(DOM, 'text:p'(text), T), List),
 	List = [Author|Rest],
 	atomic_list_concat(Rest, Text).
+convert_annotation(DOM, annotation(0,'',Text)) :-
+	findall(T, xpath(DOM, 'text:p'(text), T), List),
+	atomic_list_concat(List, Text).
 
 %%	cell_formula(+DOM, +Table, -Formula) is det.
 
