@@ -37,7 +37,7 @@
 	    assert_blocks/2,		% ?Sheet, ?Type
 	    block_union_new_non_empty/3,% +Blocks, -Union, -NewNonEmpty
 	    tables/3,			% ?Sheet, +Type, -Tables
-	    table/2,			% +Data, -Support
+	    (table)/2,			% +Data, -Support
 
 	    adjacent_objects/5,		% :Sheet, +Type, ?Obj1, ?Obj2, ?Rel
 	    intersecting_objects/5,	% :Sheet, +Type, ?Tab1, ?Tab2, -Intersection
